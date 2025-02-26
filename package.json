@@ -50,5 +50,35 @@
         "price-feed"
     ],
     "author": "Eliza Team",
-    "license": "MIT"
+    "license": "MIT",
+    "agentConfig": {
+        "pluginType": "elizaos:client:1.0.0",
+        "pluginParameters": {
+            "PYTH_NETWORK_ENV": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Environment for Pyth network, can be 'mainnet' or 'testnet'."
+            },
+            "PYTH_MAX_RETRIES": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Maximum number of retries for Pyth network requests."
+            },
+            "PYTH_RETRY_DELAY": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Delay between retries for Pyth network requests in milliseconds."
+            },
+            "PYTH_LOG_LEVEL": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Log level for Pyth network operations, can be 'error', 'warn', 'info', or 'debug'."
+            },
+            "PYTH_MAX_PRICE_STREAMS": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Maximum number of price streams for Pyth network."
+            }
+        }
+    }
 }
